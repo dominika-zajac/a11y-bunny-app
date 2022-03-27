@@ -1,0 +1,40 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.mainContainer {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1.4rem;
+  }
+}
